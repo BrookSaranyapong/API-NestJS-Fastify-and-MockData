@@ -121,8 +121,9 @@ Response
 }`
 
 Get Product (user/admin)
-`GET /products/:id`
-Response `{ "id": 1, "name": "Keyboard", "price": 1290, "stock": 10, "createdAt": "...", "updatedAt": "..." }`
+`GET /products/:id
+Response { "id": 1, "name": "Keyboard", "price": 1290, "stock": 10, "createdAt": "...", "updatedAt": "..." }
+`
 
 
 Create Product (admin)
@@ -130,18 +131,16 @@ Create Product (admin)
 Body 
 ```json 
 { "name": "Keyboard", "price": 1290, "stock": 10 }
+Response { "id": 7, "name": "Keyboard", "price": 1290, "stock": 10, "createdAt": "...", "updatedAt": "..." }
 ```
-Response `{ "id": 7, "name": "Keyboard", "price": 1290, "stock": 10, "createdAt": "...", "updatedAt": "..." }`
-
 
 Update Product (admin)
 `PATCH /products/:id`
 Body 
 ```json
 { "name": "Keyboard Pro", "price": 1490, "stock": 8 }
+Response { "id": 7, "name": "Keyboard Pro", "price": 1490, "stock": 8, "createdAt": "...", "updatedAt": "..." }
 ```
-Response `{ "id": 7, "name": "Keyboard Pro", "price": 1490, "stock": 8, "createdAt": "...", "updatedAt": "..." }`
- 
  
 Delete Product (admin)
 `DELETE /products/:id
