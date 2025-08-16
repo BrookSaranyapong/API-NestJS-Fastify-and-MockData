@@ -44,24 +44,24 @@
 ## Authentication Flow
 `POST /auth/register`
 
-`Body : `
+`Body :`
 ```json 
 { "email": "user@example.com", "name": "User", "password": "secret123" }
 ```
 
-`Response : `
+`Response :`
 ```json
 { "id": 1, "email": "user@example.com", "name": "User", "roles": ["user"] }
 ```
 
 `POST /auth/login`
 
-`Body : `
+`Body :`
 ```json
  { "email": "user@example.com", "password": "secret123" }
 ```
 
-`Response : `
+`Response :`
 ```json
 {
   "user": { "id": 1, "email": "user@example.com", "name": "User", "roles": ["user"] },
@@ -72,12 +72,12 @@
 
 `GET /auth/me`
 
-`Headers : `
+`Headers :`
 ```json 
 Authorization: Bearer <JWT_ACCESS>
 ```
 
-`Response : `
+`Response :`
 ```json 
 { "id": 1, "email": "user@example.com", "name": "User", "roles": ["user"] }
 ```
@@ -85,12 +85,12 @@ Authorization: Bearer <JWT_ACCESS>
 **Refresh Token**
 `POST /auth/refresh`
 
-`Body : `
+`Body :`
 ```json
 { "refreshToken": "<JWT_REFRESH>" }
 ```
 
-`Response : `
+`Response :`
 ```json
 {
   "user": { "id": 1, "email": "user@example.com", "name": "User", "roles": ["user"] },
@@ -104,7 +104,7 @@ Authorization: Bearer <JWT_ACCESS>
 **Logout**
 `POST /auth/logout`
 
-`Headers: `
+`Headers :`
 ```json 
 Authorization: Bearer <JWT_ACCESS>
 ```
@@ -118,7 +118,7 @@ Authorization: Bearer <JWT_ACCESS>
 { "all": true }
 ```
 
-`Response : `
+`Response :`
 ```json
 { "ok": true }
 ```
@@ -144,7 +144,7 @@ limit: จำนวนต่อหน้า (เริ่ม 10)
 q: ค้นหาชื่อสินค้า (optional)
 ```
 
-`Response : `
+`Response :`
 ```json
 {
   "meta": { "page": 1, "limit": 10, "total": 42 },
@@ -157,7 +157,7 @@ q: ค้นหาชื่อสินค้า (optional)
 **Get Product (user/admin)**
 `GET /products/:id`
 
-`Response : `
+`Response :`
 ```json
 { "id": 1, "name": "Keyboard", "price": 1290, "stock": 10, "createdAt": "...", "updatedAt": "..." }
 ```
@@ -166,7 +166,7 @@ q: ค้นหาชื่อสินค้า (optional)
 **Create Product (admin)**
 `POST /products`
 
-`Body : `
+`Body :`
 ```json 
 { "name": "Keyboard", "price": 1290, "stock": 10 }
 Response { "id": 7, "name": "Keyboard", "price": 1290, "stock": 10, "createdAt": "...", "updatedAt": "..." }
@@ -175,7 +175,7 @@ Response { "id": 7, "name": "Keyboard", "price": 1290, "stock": 10, "createdAt":
 **Update Product (admin)**
 `PATCH /products/:id`
 
-`Body : `
+`Body :`
 ```json
 { "name": "Keyboard Pro", "price": 1490, "stock": 8 }
 Response { "id": 7, "name": "Keyboard Pro", "price": 1490, "stock": 8, "createdAt": "...", "updatedAt": "..." }
@@ -184,7 +184,7 @@ Response { "id": 7, "name": "Keyboard Pro", "price": 1490, "stock": 8, "createdA
 **Delete Product (admin)**
 `DELETE /products/:id`
 
-`Response : `
+`Response :`
 ```json
  { "ok": true }
 ```
@@ -192,7 +192,7 @@ Response { "id": 7, "name": "Keyboard Pro", "price": 1490, "stock": 8, "createdA
 **Seed Products (admin)**
 `POST /products/seed?count=20`
 
-`Response : `
+`Response :`
 ```json
 { "ok": true, "inserted": 20 }
 ```
@@ -200,7 +200,7 @@ Response { "id": 7, "name": "Keyboard Pro", "price": 1490, "stock": 8, "createdA
 **Reset Products (admin)**
 `POST /products/reset`
 
-`Response : `
+`Response :`
 ```json
 { "ok": true }
 ```
