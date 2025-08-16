@@ -141,13 +141,17 @@ Response
 ```
 
 Get Product (user/admin)
-`GET /products/:id
-Response { "id": 1, "name": "Keyboard", "price": 1290, "stock": 10, "createdAt": "...", "updatedAt": "..." }
-`
+`GET /products/:id`
+
+Response 
+```json
+{ "id": 1, "name": "Keyboard", "price": 1290, "stock": 10, "createdAt": "...", "updatedAt": "..." }
+```
 
 
 Create Product (admin)
 `POST /products`
+
 Body 
 ```json 
 { "name": "Keyboard", "price": 1290, "stock": 10 }
@@ -156,6 +160,7 @@ Response { "id": 7, "name": "Keyboard", "price": 1290, "stock": 10, "createdAt":
 
 Update Product (admin)
 `PATCH /products/:id`
+
 Body 
 ```json
 { "name": "Keyboard Pro", "price": 1490, "stock": 8 }
@@ -163,16 +168,28 @@ Response { "id": 7, "name": "Keyboard Pro", "price": 1490, "stock": 8, "createdA
 ```
  
 Delete Product (admin)
-`DELETE /products/:id
-Response { "ok": true }`
+`DELETE /products/:id`
+
+Response
+```json
+ { "ok": true }`
+```
 
 Seed Products (admin)
-`POST /products/seed?count=20
-Response { "ok": true, "inserted": 20 }`
+`POST /products/seed?count=20`
+
+Response 
+```json
+{ "ok": true, "inserted": 20 }`
+```
 
 Reset Products (admin)
-`POST /products/reset
-Response { "ok": true }`
+`POST /products/reset`
+
+Response
+```json
+{ "ok": true }`
+```
 
 ## Project setup
 
