@@ -42,48 +42,57 @@
 | `/products/reset` | POST   | `admin`         |
 
 ## Authentication Flow
-POST /auth/register
-Body { "email": "user@example.com", "name": "User", "password": "secret123" }
-Response { "id": 1, "email": "user@example.com", "name": "User", "roles": ["user"] }
+`POST /auth/register`
+Body
+```json 
+{ "email": "user@example.com", "name": "User", "password": "secret123" }
+```
+Response `{ "id": 1, "email": "user@example.com", "name": "User", "roles": ["user"] }`
 
-POST /auth/login
-Body { "email": "user@example.com", "password": "secret123" }
+`POST /auth/login`
+Body 
+```json
+ { "email": "user@example.com", "password": "secret123" }
+```
 Response
-{
+`{
   "user": { "id": 1, "email": "user@example.com", "name": "User", "roles": ["user"] },
   "accessToken": "<JWT_ACCESS>",
   "refreshToken": "<JWT_REFRESH>"
-}
+}`
 
-GET /auth/me
+`GET /auth/me`
 Headers: Authorization: Bearer <JWT_ACCESS>
-Response { "id": 1, "email": "user@example.com", "name": "User", "roles": ["user"] }
+Response `{ "id": 1, "email": "user@example.com", "name": "User", "roles": ["user"] }`
 
 Refresh Token
-POST /auth/refresh
-Body { "refreshToken": "<JWT_REFRESH>" }
-Response
+`POST /auth/refresh`
+Body 
+```json
+{ "refreshToken": "<JWT_REFRESH>" }
+```
+`Response
 {
   "user": { "id": 1, "email": "user@example.com", "name": "User", "roles": ["user"] },
   "accessToken": "<NEW_JWT_ACCESS>",
   "refreshToken": "<NEW_JWT_REFRESH>"
-}
+}`
 
 ระบบใช้ rotation: refresh ตัวเก่าถูกยกเลิกทันที และออกคู่ใหม่
 
 Logout
-POST /auth/logout
-Headers: Authorization: Bearer <JWT_ACCESS>
+`POST /auth/logout`
+```Headers: Authorization: Bearer <JWT_ACCESS>```
 Body ตัวเลือก
-
+```json
 ล็อกเอาต์เฉพาะ refresh token นั้นๆ:
 { "refreshToken": "<JWT_REFRESH>" }
 
 ล็อกเอาต์ทุกอุปกรณ์ของผู้ใช้:
 { "all": true }
-
+```
 Response
-{ "ok": true }
+`{ "ok": true }`
 
 หมายเหตุสำคัญ: ระบบนี้ รีโวคเฉพาะ refresh token (ผ่าน jti)
 Access token ที่ออกไปแล้วจะยังใช้ได้จนหมดอายุ (เช่น 15 นาที) ตามพฤติกรรมปกติของ JWT
@@ -96,49 +105,55 @@ user: อ่านได้ (GET)
 admin: CRUD + seed/reset
 
 List Products (user/admin)
-GET /products
+`GET /products`
 Query
-
+`
 page: หมายเลขหน้า (เริ่ม 1)
 limit: จำนวนต่อหน้า (เริ่ม 10)
 q: ค้นหาชื่อสินค้า (optional)
-
+`
 Response
-{
+`{
   "meta": { "page": 1, "limit": 10, "total": 42 },
   "items": [
     { "id": 1, "name": "Keyboard", "price": 1290, "stock": 10, "createdAt": "...", "updatedAt": "..." }
   ]
-}
+}`
 
 Get Product (user/admin)
-GET /products/:id
-Response { "id": 1, "name": "Keyboard", "price": 1290, "stock": 10, "createdAt": "...", "updatedAt": "..." }
+`GET /products/:id`
+Response `{ "id": 1, "name": "Keyboard", "price": 1290, "stock": 10, "createdAt": "...", "updatedAt": "..." }`
 
 
 Create Product (admin)
-POST /products
-Body { "name": "Keyboard", "price": 1290, "stock": 10 }
-Response { "id": 7, "name": "Keyboard", "price": 1290, "stock": 10, "createdAt": "...", "updatedAt": "..." }
+`POST /products`
+Body 
+```json 
+{ "name": "Keyboard", "price": 1290, "stock": 10 }
+```
+Response `{ "id": 7, "name": "Keyboard", "price": 1290, "stock": 10, "createdAt": "...", "updatedAt": "..." }`
 
 
 Update Product (admin)
-PATCH /products/:id
-Body { "name": "Keyboard Pro", "price": 1490, "stock": 8 }
-Response { "id": 7, "name": "Keyboard Pro", "price": 1490, "stock": 8, "createdAt": "...", "updatedAt": "..." }
+`PATCH /products/:id`
+Body 
+```json
+{ "name": "Keyboard Pro", "price": 1490, "stock": 8 }
+```
+Response `{ "id": 7, "name": "Keyboard Pro", "price": 1490, "stock": 8, "createdAt": "...", "updatedAt": "..." }`
  
  
 Delete Product (admin)
-DELETE /products/:id
-Response { "ok": true }
+`DELETE /products/:id
+Response { "ok": true }`
 
 Seed Products (admin)
-POST /products/seed?count=20
-Response { "ok": true, "inserted": 20 }
+`POST /products/seed?count=20
+Response { "ok": true, "inserted": 20 }`
 
 Reset Products (admin)
-POST /products/reset
-Response { "ok": true }
+`POST /products/reset
+Response { "ok": true }`
 
 ## Project setup
 
