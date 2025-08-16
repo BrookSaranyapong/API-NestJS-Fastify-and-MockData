@@ -44,12 +44,12 @@
 ## Authentication Flow
 `POST /auth/register`
 
-Body:
+`**Body : **`
 ```json 
 { "email": "user@example.com", "name": "User", "password": "secret123" }
 ```
 
-Response :
+`**Response : **`
 ```json
 { "id": 1, "email": "user@example.com", "name": "User", "roles": ["user"] }
 ```
