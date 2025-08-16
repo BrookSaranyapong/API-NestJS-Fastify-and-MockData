@@ -43,6 +43,7 @@
 
 ## Authentication Flow
 `POST /auth/register`
+
 Body:
 ```json 
 { "email": "user@example.com", "name": "User", "password": "secret123" }
@@ -54,6 +55,7 @@ Response :
 ```
 
 `POST /auth/login`
+
 Body :
 ```json
  { "email": "user@example.com", "password": "secret123" }
@@ -69,6 +71,7 @@ Response :
 ```
 
 `GET /auth/me`
+
 Headers :
 ```json 
 Authorization: Bearer <JWT_ACCESS>
@@ -81,6 +84,7 @@ Response :
 
 **Refresh Token**
 `POST /auth/refresh`
+
 Body :
 ```json
 { "refreshToken": "<JWT_REFRESH>" }
