@@ -1,4 +1,3 @@
-// src/features/products/products.controller.spec.ts
 import { Test, TestingModule } from '@nestjs/testing';
 import { ProductsController } from './products.controller';
 import { ProductsService } from './products.service';
@@ -12,6 +11,8 @@ describe('ProductsController', () => {
     findOne: jest.fn(),
     update: jest.fn(),
     remove: jest.fn(),
+    seed: jest.fn(),
+    reset: jest.fn(),
   };
 
   const product = () => ({
@@ -55,7 +56,7 @@ describe('ProductsController', () => {
       };
       serviceMock.findAll.mockResolvedValueOnce(paged);
       const res = await controller.findAll('2', '5', 'key');
-      expect(serviceMock.findAll).toHaveBeenCalledWith(2, 5, 'key'); // <- แปลงเป็น number แล้ว
+      expect(serviceMock.findAll).toHaveBeenCalledWith(2, 5, 'key'); // แปลงเป็น number แล้ว
       expect(res.items).toHaveLength(1);
     });
   });
@@ -84,6 +85,25 @@ describe('ProductsController', () => {
       serviceMock.remove.mockResolvedValueOnce({ ok: true });
       const res = await controller.remove(1 as any);
       expect(serviceMock.remove).toHaveBeenCalledWith(1);
+      expect(res).toEqual({ ok: true });
+    });
+  });
+
+  // ✅ เพิ่มเทสสำหรับ endpoints dev
+  describe('seed', () => {
+    it('calls service.seed with parsed count', async () => {
+      serviceMock.seed.mockResolvedValueOnce({ ok: true, inserted: 15 });
+      const res = await controller.seed('15');
+      expect(serviceMock.seed).toHaveBeenCalledWith(15);
+      expect(res).toEqual({ ok: true, inserted: 15 });
+    });
+  });
+
+  describe('reset', () => {
+    it('calls service.reset and returns ok', async () => {
+      serviceMock.reset.mockResolvedValueOnce({ ok: true });
+      const res = await controller.reset();
+      expect(serviceMock.reset).toHaveBeenCalled();
       expect(res).toEqual({ ok: true });
     });
   });
