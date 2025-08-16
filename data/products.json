@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "name": "Licensed Concrete Tuna",
+    "price": 49.32,
+    "stock": 138,
+    "createdAt": "2025-08-16T11:42:47.809Z",
+    "updatedAt": "2025-08-16T11:42:47.809Z"
+  },
+  {
+    "id": 2,
+    "name": "Awesome Gold Soap",
+    "price": 112.62,
+    "stock": 170,
+    "createdAt": "2025-08-16T11:42:47.810Z",
+    "updatedAt": "2025-08-16T11:42:47.810Z"
+  },
+  {
+    "id": 3,
+    "name": "Generic Marble Chair",
+    "price": 704.78,
+    "stock": 36,
+    "createdAt": "2025-08-16T11:42:47.810Z",
+    "updatedAt": "2025-08-16T11:42:47.810Z"
+  },
+  {
+    "id": 4,
+    "name": "Awesome Cotton Bacon",
+    "price": 785.11,
+    "stock": 111,
+    "createdAt": "2025-08-16T11:42:47.811Z",
+    "updatedAt": "2025-08-16T11:42:47.811Z"
+  },
+  {
+    "id": 5,
+    "name": "Handmade Gold Soap",
+    "price": 830.89,
+    "stock": 122,
+    "createdAt": "2025-08-16T11:42:47.812Z",
+    "updatedAt": "2025-08-16T11:42:47.812Z"
+  },
+  {
+    "id": 6,
+    "name": "Handmade Ceramic Keyboard",
+    "price": 903.81,
+    "stock": 144,
+    "createdAt": "2025-08-16T11:42:47.813Z",
+    "updatedAt": "2025-08-16T11:42:47.813Z"
+  },
+  {
+    "id": 7,
+    "name": "Unbranded Wooden Pants",
+    "price": 586.55,
+    "stock": 188,
+    "createdAt": "2025-08-16T11:42:47.814Z",
+    "updatedAt": "2025-08-16T11:42:47.814Z"
+  },
+  {
+    "id": 8,
+    "name": "Small Wooden Gloves",
+    "price": 859.76,
+    "stock": 84,
+    "createdAt": "2025-08-16T11:42:47.815Z",
+    "updatedAt": "2025-08-16T11:42:47.815Z"
+  },
+  {
+    "id": 9,
+    "name": "Sleek Granite Bacon",
+    "price": 684.01,
+    "stock": 150,
+    "createdAt": "2025-08-16T11:42:47.816Z",
+    "updatedAt": "2025-08-16T11:42:47.816Z"
+  },
+  {
+    "id": 10,
+    "name": "Awesome Bronze Table",
+    "price": 880.76,
+    "stock": 24,
+    "createdAt": "2025-08-16T11:42:47.816Z",
+    "updatedAt": "2025-08-16T11:42:47.816Z"
+  },
+  {
+    "id": 11,
+    "name": "Recycled Wooden Tuna",
+    "price": 209.9,
+    "stock": 129,
+    "createdAt": "2025-08-16T11:42:47.817Z",
+    "updatedAt": "2025-08-16T11:42:47.817Z"
+  },
+  {
+    "id": 12,
+    "name": "Handmade Wooden Table",
+    "price": 358.32,
+    "stock": 105,
+    "createdAt": "2025-08-16T11:42:47.818Z",
+    "updatedAt": "2025-08-16T11:42:47.818Z"
+  },
+  {
+    "id": 13,
+    "name": "Electronic Steel Shoes",
+    "price": 120.5,
+    "stock": 81,
+    "createdAt": "2025-08-16T11:42:47.819Z",
+    "updatedAt": "2025-08-16T11:42:47.819Z"
+  },
+  {
+    "id": 14,
+    "name": "Handcrafted Rubber Pizza",
+    "price": 42.79,
+    "stock": 106,
+    "createdAt": "2025-08-16T11:42:47.820Z",
+    "updatedAt": "2025-08-16T11:42:47.820Z"
+  },
+  {
+    "id": 15,
+    "name": "Soft Concrete Bike",
+    "price": 294.97,
+    "stock": 151,
+    "createdAt": "2025-08-16T11:42:47.820Z",
+    "updatedAt": "2025-08-16T11:42:47.820Z"
+  },
+  {
+    "id": 16,
+    "name": "Modern Concrete Chips",
+    "price": 672.38,
+    "stock": 92,
+    "createdAt": "2025-08-16T11:42:47.821Z",
+    "updatedAt": "2025-08-16T11:42:47.821Z"
+  },
+  {
+    "id": 17,
+    "name": "Intelligent Cotton Towels",
+    "price": 149.75,
+    "stock": 194,
+    "createdAt": "2025-08-16T11:42:47.822Z",
+    "updatedAt": "2025-08-16T11:42:47.822Z"
+  },
+  {
+    "id": 18,
+    "name": "Soft Marble Computer",
+    "price": 820.71,
+    "stock": 199,
+    "createdAt": "2025-08-16T11:42:47.823Z",
+    "updatedAt": "2025-08-16T11:42:47.823Z"
+  },
+  {
+    "id": 19,
+    "name": "Tasty Bamboo Keyboard",
+    "price": 226.26,
+    "stock": 107,
+    "createdAt": "2025-08-16T11:42:47.824Z",
+    "updatedAt": "2025-08-16T11:42:47.824Z"
+  },
+  {
+    "id": 20,
+    "name": "Recycled Wooden Hat",
+    "price": 165.91,
+    "stock": 190,
+    "createdAt": "2025-08-16T11:42:47.825Z",
+    "updatedAt": "2025-08-16T11:42:47.825Z"
+  },
+  {
+    "id": 21,
+    "name": "Refined Marble Chair",
+    "price": 869.23,
+    "stock": 58,
+    "createdAt": "2025-08-16T11:42:47.826Z",
+    "updatedAt": "2025-08-16T11:42:47.826Z"
+  },
+  {
+    "id": 22,
+    "name": "Sleek Plastic Bacon",
+    "price": 523.63,
+    "stock": 185,
+    "createdAt": "2025-08-16T11:42:47.827Z",
+    "updatedAt": "2025-08-16T11:42:47.827Z"
+  },
+  {
+    "id": 23,
+    "name": "Generic Concrete Salad",
+    "price": 110.04,
+    "stock": 49,
+    "createdAt": "2025-08-16T11:42:47.828Z",
+    "updatedAt": "2025-08-16T11:42:47.828Z"
+  },
+  {
+    "id": 24,
+    "name": "Rustic Gold Pants",
+    "price": 729.95,
+    "stock": 113,
+    "createdAt": "2025-08-16T11:42:47.828Z",
+    "updatedAt": "2025-08-16T11:42:47.828Z"
+  },
+  {
+    "id": 25,
+    "name": "Luxurious Bronze Towels",
+    "price": 730.1,
+    "stock": 151,
+    "createdAt": "2025-08-16T11:42:47.829Z",
+    "updatedAt": "2025-08-16T11:42:47.829Z"
+  },
+  {
+    "id": 26,
+    "name": "Awesome Cotton Salad",
+    "price": 822.69,
+    "stock": 56,
+    "createdAt": "2025-08-16T11:42:47.830Z",
+    "updatedAt": "2025-08-16T11:42:47.830Z"
+  },
+  {
+    "id": 27,
+    "name": "Licensed Silk Sausages",
+    "price": 981.14,
+    "stock": 38,
+    "createdAt": "2025-08-16T11:42:47.831Z",
+    "updatedAt": "2025-08-16T11:42:47.831Z"
+  },
+  {
+    "id": 28,
+    "name": "Recycled Wooden Pants",
+    "price": 224.66,
+    "stock": 45,
+    "createdAt": "2025-08-16T11:42:47.832Z",
+    "updatedAt": "2025-08-16T11:42:47.832Z"
+  },
+  {
+    "id": 29,
+    "name": "Frozen Cotton Car",
+    "price": 532.52,
+    "stock": 103,
+    "createdAt": "2025-08-16T11:42:47.833Z",
+    "updatedAt": "2025-08-16T11:42:47.833Z"
+  },
+  {
+    "id": 30,
+    "name": "Awesome Gold Shirt",
+    "price": 303.82,
+    "stock": 144,
+    "createdAt": "2025-08-16T11:42:47.833Z",
+    "updatedAt": "2025-08-16T11:42:47.833Z"
+  },
+  {
+    "id": 31,
+    "name": "Refined Marble Pants",
+    "price": 222.43,
+    "stock": 132,
+    "createdAt": "2025-08-16T11:42:47.834Z",
+    "updatedAt": "2025-08-16T11:42:47.834Z"
+  },
+  {
+    "id": 32,
+    "name": "Modern Cotton Mouse",
+    "price": 454.4,
+    "stock": 177,
+    "createdAt": "2025-08-16T11:42:47.835Z",
+    "updatedAt": "2025-08-16T11:42:47.835Z"
+  },
+  {
+    "id": 33,
+    "name": "Oriental Plastic Chips",
+    "price": 156.29,
+    "stock": 170,
+    "createdAt": "2025-08-16T11:42:47.836Z",
+    "updatedAt": "2025-08-16T11:42:47.836Z"
+  },
+  {
+    "id": 34,
+    "name": "Luxurious Marble Hat",
+    "price": 595.02,
+    "stock": 132,
+    "createdAt": "2025-08-16T11:42:47.837Z",
+    "updatedAt": "2025-08-16T11:42:47.837Z"
+  },
+  {
+    "id": 35,
+    "name": "Refined Marble Chips",
+    "price": 440.65,
+    "stock": 2,
+    "createdAt": "2025-08-16T11:42:47.838Z",
+    "updatedAt": "2025-08-16T11:42:47.838Z"
+  },
+  {
+    "id": 36,
+    "name": "Refined Steel Gloves",
+    "price": 561.84,
+    "stock": 114,
+    "createdAt": "2025-08-16T11:42:47.839Z",
+    "updatedAt": "2025-08-16T11:42:47.839Z"
+  },
+  {
+    "id": 37,
+    "name": "Bespoke Metal Salad",
+    "price": 723.09,
+    "stock": 61,
+    "createdAt": "2025-08-16T11:42:47.839Z",
+    "updatedAt": "2025-08-16T11:42:47.839Z"
+  },
+  {
+    "id": 38,
+    "name": "Tasty Cotton Mouse",
+    "price": 106.41,
+    "stock": 91,
+    "createdAt": "2025-08-16T11:42:47.840Z",
+    "updatedAt": "2025-08-16T11:42:47.840Z"
+  },
+  {
+    "id": 39,
+    "name": "Fresh Cotton Tuna",
+    "price": 637.7,
+    "stock": 134,
+    "createdAt": "2025-08-16T11:42:47.841Z",
+    "updatedAt": "2025-08-16T11:42:47.841Z"
+  },
+  {
+    "id": 40,
+    "name": "Bespoke Metal Car",
+    "price": 955.73,
+    "stock": 31,
+    "createdAt": "2025-08-16T11:42:47.842Z",
+    "updatedAt": "2025-08-16T11:42:47.842Z"
+  },
+  {
+    "id": 41,
+    "name": "Elegant Cotton Tuna",
+    "price": 419.86,
+    "stock": 32,
+    "createdAt": "2025-08-16T11:42:47.843Z",
+    "updatedAt": "2025-08-16T11:42:47.843Z"
+  },
+  {
+    "id": 42,
+    "name": "Modern Metal Bacon",
+    "price": 581.19,
+    "stock": 113,
+    "createdAt": "2025-08-16T11:42:47.844Z",
+    "updatedAt": "2025-08-16T11:42:47.844Z"
+  },
+  {
+    "id": 43,
+    "name": "Refined Silk Computer",
+    "price": 232.22,
+    "stock": 124,
+    "createdAt": "2025-08-16T11:42:47.845Z",
+    "updatedAt": "2025-08-16T11:42:47.845Z"
+  },
+  {
+    "id": 44,
+    "name": "Fresh Wooden Chips",
+    "price": 969.61,
+    "stock": 163,
+    "createdAt": "2025-08-16T11:42:47.846Z",
+    "updatedAt": "2025-08-16T11:42:47.846Z"
+  },
+  {
+    "id": 45,
+    "name": "Fresh Granite Salad",
+    "price": 351.26,
+    "stock": 171,
+    "createdAt": "2025-08-16T11:42:47.847Z",
+    "updatedAt": "2025-08-16T11:42:47.847Z"
+  },
+  {
+    "id": 46,
+    "name": "Recycled Cotton Pants",
+    "price": 121.48,
+    "stock": 102,
+    "createdAt": "2025-08-16T11:42:47.848Z",
+    "updatedAt": "2025-08-16T11:42:47.848Z"
+  },
+  {
+    "id": 47,
+    "name": "Refined Metal Pants",
+    "price": 613.21,
+    "stock": 99,
+    "createdAt": "2025-08-16T11:42:47.848Z",
+    "updatedAt": "2025-08-16T11:42:47.848Z"
+  },
+  {
+    "id": 48,
+    "name": "Bespoke Ceramic Pants",
+    "price": 955.87,
+    "stock": 190,
+    "createdAt": "2025-08-16T11:42:47.849Z",
+    "updatedAt": "2025-08-16T11:42:47.849Z"
+  },
+  {
+    "id": 49,
+    "name": "Incredible Steel Tuna",
+    "price": 983.65,
+    "stock": 5,
+    "createdAt": "2025-08-16T11:42:47.850Z",
+    "updatedAt": "2025-08-16T11:42:47.850Z"
+  },
+  {
+    "id": 50,
+    "name": "Oriental Aluminum Fish",
+    "price": 979.23,
+    "stock": 127,
+    "createdAt": "2025-08-16T11:42:47.851Z",
+    "updatedAt": "2025-08-16T11:42:47.851Z"
+  }
+]
