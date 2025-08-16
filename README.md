@@ -172,7 +172,7 @@ Delete Product (admin)
 
 Response
 ```json
- { "ok": true }`
+ { "ok": true }
 ```
 
 Seed Products (admin)
@@ -180,7 +180,7 @@ Seed Products (admin)
 
 Response 
 ```json
-{ "ok": true, "inserted": 20 }`
+{ "ok": true, "inserted": 20 }
 ```
 
 Reset Products (admin)
@@ -188,7 +188,7 @@ Reset Products (admin)
 
 Response
 ```json
-{ "ok": true }`
+{ "ok": true }
 ```
 
 ## Project setup
