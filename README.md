@@ -47,19 +47,26 @@ Body
 ```json 
 { "email": "user@example.com", "name": "User", "password": "secret123" }
 ```
-Response `{ "id": 1, "email": "user@example.com", "name": "User", "roles": ["user"] }`
+
+Response 
+```json
+{ "id": 1, "email": "user@example.com", "name": "User", "roles": ["user"] }
+```
 
 `POST /auth/login`
 Body 
 ```json
  { "email": "user@example.com", "password": "secret123" }
 ```
+
 Response
-`{
+```json
+{
   "user": { "id": 1, "email": "user@example.com", "name": "User", "roles": ["user"] },
   "accessToken": "<JWT_ACCESS>",
   "refreshToken": "<JWT_REFRESH>"
-}`
+}
+```
 
 `GET /auth/me`
 Headers: Authorization: Bearer <JWT_ACCESS>
@@ -67,22 +74,27 @@ Response `{ "id": 1, "email": "user@example.com", "name": "User", "roles": ["use
 
 Refresh Token
 `POST /auth/refresh`
+
 Body 
 ```json
 { "refreshToken": "<JWT_REFRESH>" }
 ```
-`Response
+
+Response
+```json
 {
   "user": { "id": 1, "email": "user@example.com", "name": "User", "roles": ["user"] },
   "accessToken": "<NEW_JWT_ACCESS>",
   "refreshToken": "<NEW_JWT_REFRESH>"
-}`
+}
+```
 
 ระบบใช้ rotation: refresh ตัวเก่าถูกยกเลิกทันที และออกคู่ใหม่
 
 Logout
 `POST /auth/logout`
 ```Headers: Authorization: Bearer <JWT_ACCESS>```
+
 Body ตัวเลือก
 ```json
 ล็อกเอาต์เฉพาะ refresh token นั้นๆ:
@@ -91,34 +103,42 @@ Body ตัวเลือก
 ล็อกเอาต์ทุกอุปกรณ์ของผู้ใช้:
 { "all": true }
 ```
+
 Response
-`{ "ok": true }`
+```json
+{ "ok": true }
+```
 
 หมายเหตุสำคัญ: ระบบนี้ รีโวคเฉพาะ refresh token (ผ่าน jti)
 Access token ที่ออกไปแล้วจะยังใช้ได้จนหมดอายุ (เช่น 15 นาที) ตามพฤติกรรมปกติของ JWT
 
 ## Products API
-
+```txt
 ทุก endpoint ต้องแนบ Authorization: Bearer <JWT_ACCESS>
 สิทธิ์ :
 user: อ่านได้ (GET)
 admin: CRUD + seed/reset
+```
 
 List Products (user/admin)
 `GET /products`
+
+```txt
 Query
-`
 page: หมายเลขหน้า (เริ่ม 1)
 limit: จำนวนต่อหน้า (เริ่ม 10)
 q: ค้นหาชื่อสินค้า (optional)
-`
+```
+
 Response
-`{
+```json
+{
   "meta": { "page": 1, "limit": 10, "total": 42 },
   "items": [
     { "id": 1, "name": "Keyboard", "price": 1290, "stock": 10, "createdAt": "...", "updatedAt": "..." }
   ]
-}`
+}
+```
 
 Get Product (user/admin)
 `GET /products/:id
